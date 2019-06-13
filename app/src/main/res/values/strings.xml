@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">testprojek</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="error_0">Form Must Be Filled</string>
+    <string name="error_1">User Not Found</string>
+    <string name="error_2">Wrong Password</string>
+    <string name="error_3">Login Success</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriadprobold"
+                android:text="Avengers Assemble"/>
+            <ImageView
+                android:id="@+id/btnFavorite"
+                android:layout_width="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_favorite_black_24dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/myriadprolight"
+            android:text="26 May 2013"/>
+
+        <TextView
+            android:id="@+id/tPlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/myriadproregular"
+            android:text="Can the world's most powerful team of Super Heroes put aside their differences and learn to live together under one roof long enough to save the world from ultimate destruction? The answer will be revealed when the Red Skull and M.O.D.O.K. wage war on The Avengers."/>
+
+
+        <TextView
+            android:id="@+id/tActor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/myriadproregular"
+            android:textColor="#000"
+            android:text="Roger Craig Smith, Troy Baker, Fred Tatasciore, Travis Willingham"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:alpha="0.5"
+                android:src="@drawable/ic_star_black_24dp"/>
+            <TextView
+                android:id="@+id/tStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.0"
+                android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

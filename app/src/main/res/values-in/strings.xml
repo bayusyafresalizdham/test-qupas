@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">testprojek</string>
+    <string name="action_add_favourite">Tambahkan Ke Favorit</string>
+    <string name="backdrop_title">KUMPULAN FILM</string>
+    <string name="backdrop_subtitle">Lebih dari 10 film</string>
+    <string name="error_0">Semua form harus terisi</string>
+    <string name="error_1">User Tidak Terdaftar</string>
+    <string name="error_2">Password Salah</string>
+    <string name="error_3">Login Berhasil</string>
+</resources>
