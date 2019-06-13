@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#fff">
+
+    <TextView
+        android:text="Filter Pencarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="Lakukan Pencarian Film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#363636"
+        android:layout_marginRight="7dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="@string/hkeyword"
+        android:gravity="left"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:alpha="0.4"
+        android:textColorHint="#000"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="14dp"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/edtKeyword" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ececec"></View>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/hyear"
+        android:gravity="left"
+        android:maxLength="4"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:alpha="0.4"
+        android:textColorHint="#000"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="14dp"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/edtYear" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ececec"></View>
+    <Spinner
+        android:id="@+id/spnType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:entries="@array/type"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="6dp"
+        android:paddingBottom="14dp"
+        android:layout_marginLeft="6dp"
+        android:background="@android:color/transparent"></Spinner>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ececec"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:background="#fff"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:elevation="0dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="#fff"/>
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:elevation="0dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="#fff"/>
+    </LinearLayout>
+</LinearLayout>

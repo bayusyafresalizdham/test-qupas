@@ -7,4 +7,12 @@
     <string name="error_1">User Not Found</string>
     <string name="error_2">Wrong Password</string>
     <string name="error_3">Login Success</string>
+    <string name="hyear">Year</string>
+    <string name="hkeyword">Keyword</string>
+    <string-array name="type">
+        <item>Select Type</item>
+        <item>Movie</item>
+        <item>Series</item>
+        <item>Episode</item>
+    </string-array>
 </resources>

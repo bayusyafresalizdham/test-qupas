@@ -32,23 +32,32 @@ public class HomePresenter implements IHomePresenter {
     public void getDataFromURL(String page) {
         homeView.isLoading(true);
         RemoteService service = RetrofitHelper.getClient().create(RemoteService.class);
-        Call<FilmResponse> call = service.getFilmOMDB("20bd772c", "avengers",""+page);
+        Call<FilmResponse> call = service.getFilmOMDB(ConstantUtils.OMDB_TOKEN,
+                ""+ConstantUtils.OMDB_KEYWORD,
+                ""+ConstantUtils.OMDB_TYPE,
+                ""+ConstantUtils.OMDB_YEAR,
+                ""+page);
         call.enqueue(new Callback<FilmResponse>() {
             @Override
             public void onResponse(Call<FilmResponse> call, retrofit2.Response<FilmResponse> response) {
+                Log.d("cekurl",""+call.request());
                 homeView.isLoading(false);
-                if(response.body().getSearch().size() == 0){
-                    homeView.isEmpty(true);
-                }else{
-                    List<Film> films = new ArrayList<>();
-                    for (int i=0;i<response.body().getSearch().size();i++){
-                        films.add(new Film(response.body().getSearch().get(i).getTitle(),
-                                response.body().getSearch().get(i).getYear(),
-                                response.body().getSearch().get(i).getImdbID(),
-                                response.body().getSearch().get(i).getType(),
-                                response.body().getSearch().get(i).getPoster()));
+                if(response.body().getSearch() != null){
+                    if(response.body().getSearch().size() == 0){
+                        homeView.isEmpty(true);
+                    }else{
+                        List<Film> films = new ArrayList<>();
+                        for (int i=0;i<response.body().getSearch().size();i++){
+                            films.add(new Film(response.body().getSearch().get(i).getTitle(),
+                                    response.body().getSearch().get(i).getYear(),
+                                    response.body().getSearch().get(i).getImdbID(),
+                                    response.body().getSearch().get(i).getType(),
+                                    response.body().getSearch().get(i).getPoster()));
+                        }
+                        homeView.getDataSuccess(films);
                     }
-                    homeView.getDataSuccess(films);
+                }else{
+                    homeView.getDataFailure(true);
                 }
             }
             @Override

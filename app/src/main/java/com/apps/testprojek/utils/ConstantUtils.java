@@ -8,5 +8,10 @@ public class ConstantUtils {
     public static String LOGIN_USERNAME = "qupas";
     public static String LOGIN_PASSWORD = "12345678";
 
+    public static String OMDB_TOKEN = "20bd772c";
+    public static String OMDB_KEYWORD = "avengers";
+    public static String OMDB_TYPE = "";
+    public static String OMDB_YEAR = "";
+
     public static String PARSE_TITLE_MOVIE = "";
 }

@@ -14,6 +14,8 @@ public interface RemoteService {
     @GET("/")
     Call<FilmResponse> getFilmOMDB(@Query("apikey") String apikey,
                                 @Query("s") String s,
+                                @Query("type") String type,
+                                @Query("y") String y,
                                 @Query("page") String page);
 
     //http://www.omdbapi.com/?apikey=20bd772c&t=Avengers Assemble&plot=full
